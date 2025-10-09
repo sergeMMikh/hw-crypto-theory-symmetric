@@ -135,7 +135,9 @@ modes=(
 Результат- пароль `MARINA`.</br>
 ![alt text](images/Task-1/image-5.png)
 
-Здесь код возврата 255 появляется там, где длина хэша не подходит выбранному режиму (hashcat выдаёт “Token length exception”). Это будет учтено [в улучшеном варианте](advansed-uncript.sh).
+Здесь код возврата 255 появляется там, где длина хэша не подходит выбранному режиму (hashcat выдаёт “Token length exception”). Это учтено [в улучшеном варианте](advansed-uncript.sh).
 
 Ничто не помешает использовать цикл для всех файлов в директории `SecLists/Passwords/Common-Credentials`. Но эта процедура займёт уйму времени.
+
+![alt text](images/Task-1/image-6.png)
 
