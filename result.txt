@@ -1,0 +1,1229 @@
+hashcat (v6.2.6) starting
+
+OpenCL API (OpenCL 3.0 PoCL 5.0+debian  Linux, None+Asserts, RELOC, SPIR, LLVM 16.0.6, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+==================================================================================================================================================
+* Device #1: cpu-haswell-AMD Ryzen 7 5700G with Radeon Graphics, 10800/21664 MB (4096 MB allocatable), 16MCU
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 256
+
+Sorting hashes. Please be patient...Sorted hashesRemoving duplicate hashes. Please be patient...Removed duplicate hashesSorting salts. Please be patient...Sorted saltsGenerating bitmap tables...Generated bitmap tablesHashes: 1 digests; 1 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Optimizers applied:
+* Zero-Byte
+* Early-Skip
+* Not-Salted
+* Not-Iterated
+* Single-Hash
+* Single-Salt
+* Raw-Hash
+
+ATTENTION! Pure (unoptimized) backend kernels selected.
+Pure kernels can crack longer passwords, but drastically reduce performance.
+If you want to switch to optimized kernels, append -O to your commandline.
+See the above message to find out about the exact limits.
+
+Watchdog: Hardware monitoring interface not found on your system.
+Watchdog: Temperature abort trigger disabled.
+
+Initializing device kernels and memory. Please be patient...Initializing backend runtime for device #1. Please be patient...Initialized backend runtime for device #1Host memory required for this attack: 4 MB
+
+Initialized device kernels and memoryStarting self-test. Please be patient...Finished self-testDictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/100k-most-used-passwords-NCSC.txt
+* Passwords.: 96507
+* Bytes.....: 804066
+* Keyspace..: 96507
+
+Starting autotune. Please be patient...Finished autotune                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:31 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:31 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/100k-most-used-passwords-NCSC.txt)
+Guess.Queue......: 1/40 (2.50%)
+Speed.#1.........:  4254.7 kH/s (0.62ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 96507/96507 (100.00%)
+Rejected.........: 0/96507 (0.00%)
+Restore.Point....: 96507/96507 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 07031995 -> crossroad
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/10k-most-common.txt
+* Passwords.: 10000
+* Bytes.....: 73017
+* Keyspace..: 10000
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:31 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:31 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/10k-most-common.txt)
+Guess.Queue......: 2/40 (5.00%)
+Speed.#1.........:  5662.0 kH/s (0.41ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 10000/10000 (100.00%)
+Rejected.........: 0/10000 (0.00%)
+Restore.Point....: 10000/10000 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: password -> eyphed
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/1900-2020.txt
+* Passwords.: 45012
+* Bytes.....: 405108
+* Keyspace..: 45012
+
+Starting autotune. Please be patient...Finished autotune                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:31 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:31 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/1900-2020.txt)
+Guess.Queue......: 3/40 (7.50%)
+Speed.#1.........:  5834.3 kH/s (0.50ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 45012/45012 (100.00%)
+Rejected.........: 0/45012 (0.00%)
+Restore.Point....: 45012/45012 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 02021988 -> 31122020
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/2020-200_most_used_passwords.txt
+* Passwords.: 197
+* Bytes.....: 1594
+* Keyspace..: 197
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:31 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:31 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/2020-200_most_used_passwords.txt)
+Guess.Queue......: 4/40 (10.00%)
+Speed.#1.........:   187.8 kH/s (0.08ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 197/197 (100.00%)
+Rejected.........: 0/197 (0.00%)
+Restore.Point....: 197/197 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456 -> angel1
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/2023-200_most_used_passwords.txt
+* Passwords.: 200
+* Bytes.....: 1778
+* Keyspace..: 200
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:31 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:31 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/2023-200_most_used_passwords.txt)
+Guess.Queue......: 5/40 (12.50%)
+Speed.#1.........:   396.7 kH/s (0.06ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 200/200 (100.00%)
+Rejected.........: 0/200 (0.00%)
+Restore.Point....: 200/200 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456 -> qwerty123456
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/2024-197_most_used_passwords.txt
+* Passwords.: 197
+* Bytes.....: 1654
+* Keyspace..: 197
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:31 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:31 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/2024-197_most_used_passwords.txt)
+Guess.Queue......: 6/40 (15.00%)
+Speed.#1.........:   352.5 kH/s (0.07ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 197/197 (100.00%)
+Rejected.........: 0/197 (0.00%)
+Restore.Point....: 197/197 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456 -> cheese
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/500-worst-passwords.txt
+* Passwords.: 499
+* Bytes.....: 3491
+* Keyspace..: 499
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:31 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:31 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/500-worst-passwords.txt)
+Guess.Queue......: 7/40 (17.50%)
+Speed.#1.........:  1390.0 kH/s (0.06ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 499/499 (100.00%)
+Rejected.........: 0/499 (0.00%)
+Restore.Point....: 499/499 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456 -> albert
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/Pwdb_top-1000.txt
+* Passwords.: 1000
+* Bytes.....: 8025
+* Keyspace..: 1000
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:31 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:31 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/Pwdb_top-1000.txt)
+Guess.Queue......: 8/40 (20.00%)
+Speed.#1.........:  1742.0 kH/s (0.14ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1000/1000 (100.00%)
+Rejected.........: 0/1000 (0.00%)
+Restore.Point....: 1000/1000 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456 -> g13916055158
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/Pwdb_top-10000.txt
+* Passwords.: 10000
+* Bytes.....: 80456
+* Keyspace..: 10000
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:31 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:31 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/Pwdb_top-10000.txt)
+Guess.Queue......: 9/40 (22.50%)
+Speed.#1.........:  8466.5 kH/s (0.33ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 10000/10000 (100.00%)
+Rejected.........: 0/10000 (0.00%)
+Restore.Point....: 10000/10000 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456 -> benny1
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/Pwdb_top-100000.txt
+* Passwords.: 100000
+* Bytes.....: 828498
+* Keyspace..: 100000
+
+Starting autotune. Please be patient...Finished autotune                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:31 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:31 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/Pwdb_top-100000.txt)
+Guess.Queue......: 10/40 (25.00%)
+Speed.#1.........:  6073.2 kH/s (0.46ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 100000/100000 (100.00%)
+Rejected.........: 0/100000 (0.00%)
+Restore.Point....: 100000/100000 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: michael84 -> gayguy
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/Pwdb_top-1000000.txt
+* Passwords.: 1000000
+* Bytes.....: 8755171
+* Keyspace..: 1000000
+
+Starting autotune. Please be patient...Finished autotune                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:31 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:31 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/Pwdb_top-1000000.txt)
+Guess.Queue......: 11/40 (27.50%)
+Speed.#1.........:  6195.8 kH/s (0.57ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1000000/1000000 (100.00%)
+Rejected.........: 0/1000000 (0.00%)
+Restore.Point....: 1000000/1000000 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 03111953 -> 12116
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/Pwdb_top-10000000.txt
+* Passwords.: 10000000
+* Bytes.....: 94461698
+* Keyspace..: 10000000
+
+Starting autotune. Please be patient...Finished autotune                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:31 2025 (2 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/Pwdb_top-10000000.txt)
+Guess.Queue......: 12/40 (30.00%)
+Speed.#1.........:  7352.3 kH/s (0.51ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 10000000/10000000 (100.00%)
+Rejected.........: 0/10000000 (0.00%)
+Restore.Point....: 10000000/10000000 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 033589757 -> 05081992s
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/README.md
+* Passwords.: 14
+* Bytes.....: 872
+* Keyspace..: 14
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/README.md)
+Guess.Queue......: 13/40 (32.50%)
+Speed.#1.........:    29292 H/s (0.07ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 14/14 (100.00%)
+Rejected.........: 0/14 (0.00%)
+Restore.Point....: 14/14 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: ## xato-net-10-million-passwords.txt -> Source: https://github.com/berzerk0/Probable-Wordlists
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/SplashData-2014.txt
+* Passwords.: 25
+* Bytes.....: 200
+* Keyspace..: 25
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/SplashData-2014.txt)
+Guess.Queue......: 14/40 (35.00%)
+Speed.#1.........:    58483 H/s (0.02ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 25/25 (100.00%)
+Rejected.........: 0/25 (0.00%)
+Restore.Point....: 25/25 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456 -> 000000
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/SplashData-2015-1.txt
+* Passwords.: 25
+* Bytes.....: 200
+* Keyspace..: 25
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/SplashData-2015-1.txt)
+Guess.Queue......: 15/40 (37.50%)
+Speed.#1.........:    37430 H/s (0.02ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 25/25 (100.00%)
+Rejected.........: 0/25 (0.00%)
+Restore.Point....: 25/25 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456 -> 000000
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/SplashData-2015-2.txt
+* Passwords.: 25
+* Bytes.....: 199
+* Keyspace..: 25
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/SplashData-2015-2.txt)
+Guess.Queue......: 16/40 (40.00%)
+Speed.#1.........:    86840 H/s (0.02ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 25/25 (100.00%)
+Rejected.........: 0/25 (0.00%)
+Restore.Point....: 25/25 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456 -> starwars
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/best1050.txt
+* Passwords.: 1049
+* Bytes.....: 7981
+* Keyspace..: 1049
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/best1050.txt)
+Guess.Queue......: 17/40 (42.50%)
+Speed.#1.........:  1708.4 kH/s (0.17ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1049/1049 (100.00%)
+Rejected.........: 0/1049 (0.00%)
+Restore.Point....: 1049/1049 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: ------ -> zzzzzz
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/best110.txt
+* Passwords.: 110
+* Bytes.....: 849
+* Keyspace..: 110
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/best110.txt)
+Guess.Queue......: 18/40 (45.00%)
+Speed.#1.........:   355.4 kH/s (0.04ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 110/110 (100.00%)
+Rejected.........: 0/110 (0.00%)
+Restore.Point....: 110/110 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 000000 -> zxczxc
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/best15.txt
+* Passwords.: 15
+* Bytes.....: 110
+* Keyspace..: 15
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/best15.txt)
+Guess.Queue......: 19/40 (47.50%)
+Speed.#1.........:    48388 H/s (0.03ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 15/15 (100.00%)
+Rejected.........: 0/15 (0.00%)
+Restore.Point....: 15/15 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 111111 -> test
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/common-passwords-win.txt
+* Passwords.: 815
+* Bytes.....: 5766
+* Keyspace..: 815
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/common-passwords-win.txt)
+Guess.Queue......: 20/40 (50.00%)
+Speed.#1.........:  1644.6 kH/s (0.10ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 815/815 (100.00%)
+Rejected.........: 0/815 (0.00%)
+Restore.Point....: 815/815 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: aaa -> zmodem
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/darkweb2017_top-10.txt
+* Passwords.: 10
+* Bytes.....: 81
+* Keyspace..: 10
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/darkweb2017_top-10.txt)
+Guess.Queue......: 21/40 (52.50%)
+Speed.#1.........:    23009 H/s (0.02ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 10/10 (100.00%)
+Rejected.........: 0/10 (0.00%)
+Restore.Point....: 10/10 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456 -> 123123
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/darkweb2017_top-100.txt
+* Passwords.: 99
+* Bytes.....: 802
+* Keyspace..: 99
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/darkweb2017_top-100.txt)
+Guess.Queue......: 22/40 (55.00%)
+Speed.#1.........:   159.8 kH/s (0.05ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 99/99 (100.00%)
+Rejected.........: 0/99 (0.00%)
+Restore.Point....: 99/99 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456 -> babygirl1
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/darkweb2017_top-1000.txt
+* Passwords.: 999
+* Bytes.....: 8160
+* Keyspace..: 999
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/darkweb2017_top-1000.txt)
+Guess.Queue......: 23/40 (57.50%)
+Speed.#1.........:  1778.9 kH/s (0.10ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 999/999 (100.00%)
+Rejected.........: 0/999 (0.00%)
+Restore.Point....: 999/999 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456 -> soccer10
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/darkweb2017_top-10000.txt
+* Passwords.: 9999
+* Bytes.....: 82603
+* Keyspace..: 9999
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/darkweb2017_top-10000.txt)
+Guess.Queue......: 24/40 (60.00%)
+Speed.#1.........:  7982.0 kH/s (0.34ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 9999/9999 (100.00%)
+Rejected.........: 0/9999 (0.00%)
+Restore.Point....: 9999/9999 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456 -> starstar
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/four-digit-pin-codes-sorted-by-frequency-withcount.csv
+* Passwords.: 10000
+* Bytes.....: 83641
+* Keyspace..: 10000
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/four-digit-pin-codes-sorted-by-frequency-withcount.csv)
+Guess.Queue......: 25/40 (62.50%)
+Speed.#1.........:  8555.3 kH/s (0.32ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 10000/10000 (100.00%)
+Rejected.........: 0/10000 (0.00%)
+Restore.Point....: 10000/10000 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 1234,255 -> 8068,0
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/medical-devices.txt
+* Passwords.: 173
+* Bytes.....: 1290
+* Keyspace..: 173
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/medical-devices.txt)
+Guess.Queue......: 26/40 (65.00%)
+Speed.#1.........:   547.9 kH/s (0.05ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 173/173 (100.00%)
+Rejected.........: 0/173 (0.00%)
+Restore.Point....: 173/173 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 0 -> xraytech
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/probable-v2_top-12000.txt
+* Passwords.: 12645
+* Bytes.....: 100206
+* Keyspace..: 12645
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/probable-v2_top-12000.txt)
+Guess.Queue......: 27/40 (67.50%)
+Speed.#1.........:  8601.7 kH/s (0.49ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 12645/12645 (100.00%)
+Rejected.........: 0/12645 (0.00%)
+Restore.Point....: 12645/12645 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456 -> 00001111
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/probable-v2_top-1575.txt
+* Passwords.: 1575
+* Bytes.....: 12261
+* Keyspace..: 1575
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/probable-v2_top-1575.txt)
+Guess.Queue......: 28/40 (70.00%)
+Speed.#1.........:  2933.8 kH/s (0.12ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1575/1575 (100.00%)
+Rejected.........: 0/1575 (0.00%)
+Restore.Point....: 1575/1575 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456 -> 134679
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/probable-v2_top-207.txt
+* Passwords.: 207
+* Bytes.....: 1620
+* Keyspace..: 207
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/probable-v2_top-207.txt)
+Guess.Queue......: 29/40 (72.50%)
+Speed.#1.........:   620.9 kH/s (0.04ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 207/207 (100.00%)
+Rejected.........: 0/207 (0.00%)
+Restore.Point....: 207/207 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456 -> casper
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/top-20-common-SSH-passwords.txt
+* Passwords.: 22
+* Bytes.....: 180
+* Keyspace..: 22
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/top-20-common-SSH-passwords.txt)
+Guess.Queue......: 30/40 (75.00%)
+Speed.#1.........:    38366 H/s (0.06ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 22/22 (100.00%)
+Rejected.........: 0/22 (0.00%)
+Restore.Point....: 22/22 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: root -> alpine
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/top-passwords-shortlist.txt
+* Passwords.: 25
+* Bytes.....: 194
+* Keyspace..: 25
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/top-passwords-shortlist.txt)
+Guess.Queue......: 31/40 (77.50%)
+Speed.#1.........:    35789 H/s (0.06ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 25/25 (100.00%)
+Rejected.........: 0/25 (0.00%)
+Restore.Point....: 25/25 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: password -> password1
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/worst-passwords-2017-top100-slashdata.txt
+* Passwords.: 100
+* Bytes.....: 742
+* Keyspace..: 100
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/worst-passwords-2017-top100-slashdata.txt)
+Guess.Queue......: 32/40 (80.00%)
+Speed.#1.........:   220.0 kH/s (0.06ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 100/100 (100.00%)
+Rejected.........: 0/100 (0.00%)
+Restore.Point....: 100/100 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456 -> thunder
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/xato-net-10-million-passwords-10.txt
+* Passwords.: 10
+* Bytes.....: 75
+* Keyspace..: 10
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/xato-net-10-million-passwords-10.txt)
+Guess.Queue......: 33/40 (82.50%)
+Speed.#1.........:    20336 H/s (0.05ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 10/10 (100.00%)
+Rejected.........: 0/10 (0.00%)
+Restore.Point....: 10/10 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456 -> dragon
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/xato-net-10-million-passwords-100.txt
+* Passwords.: 100
+* Bytes.....: 738
+* Keyspace..: 100
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/xato-net-10-million-passwords-100.txt)
+Guess.Queue......: 34/40 (85.00%)
+Speed.#1.........:   228.4 kH/s (0.11ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 100/100 (100.00%)
+Rejected.........: 0/100 (0.00%)
+Restore.Point....: 100/100 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456 -> taylor
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/xato-net-10-million-passwords-1000.txt
+* Passwords.: 1000
+* Bytes.....: 7399
+* Keyspace..: 1000
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/xato-net-10-million-passwords-1000.txt)
+Guess.Queue......: 35/40 (87.50%)
+Speed.#1.........:  1617.3 kH/s (0.13ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1000/1000 (100.00%)
+Rejected.........: 0/1000 (0.00%)
+Restore.Point....: 1000/1000 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456 -> polina
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/xato-net-10-million-passwords-10000.txt
+* Passwords.: 10000
+* Bytes.....: 76497
+* Keyspace..: 10000
+
+Starting autotune. Please be patient...Finished autotune                                                          The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/xato-net-10-million-passwords-10000.txt)
+Guess.Queue......: 36/40 (90.00%)
+Speed.#1.........:  8975.2 kH/s (0.39ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 10000/10000 (100.00%)
+Rejected.........: 0/10000 (0.00%)
+Restore.Point....: 10000/10000 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456 -> blitz
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/xato-net-10-million-passwords-100000.txt
+* Passwords.: 100000
+* Bytes.....: 781879
+* Keyspace..: 100000
+
+Starting autotune. Please be patient...Finished autotune                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/xato-net-10-million-passwords-100000.txt)
+Guess.Queue......: 37/40 (92.50%)
+Speed.#1.........:  6855.5 kH/s (0.51ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 100000/100000 (100.00%)
+Rejected.........: 0/100000 (0.00%)
+Restore.Point....: 100000/100000 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 23112007 -> 07012006
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/xato-net-10-million-passwords-1000000.txt
+* Passwords.: 1000000
+* Bytes.....: 8557632
+* Keyspace..: 1000000
+
+Starting autotune. Please be patient...Finished autotune                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/xato-net-10-million-passwords-1000000.txt)
+Guess.Queue......: 38/40 (95.00%)
+Speed.#1.........:  8167.2 kH/s (0.48ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1000000/1000000 (100.00%)
+Rejected.........: 0/1000000 (0.00%)
+Restore.Point....: 1000000/1000000 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: vadert4 -> vaanes
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/xato-net-10-million-passwords-dup.txt
+* Passwords.: 755995
+* Bytes.....: 6212177
+* Keyspace..: 755995
+
+Starting autotune. Please be patient...Finished autotune                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (0 secs)
+Time.Estimated...: Thu Oct  9 21:57:33 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/xato-net-10-million-passwords-dup.txt)
+Guess.Queue......: 39/40 (97.50%)
+Speed.#1.........:  8050.3 kH/s (0.48ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 755995/755995 (100.00%)
+Rejected.........: 0/755995 (0.00%)
+Restore.Point....: 755995/755995 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 0124578963 -> d+
+
+Dictionary cache hit:
+* Filename..: /home/smm/sib/SecLists/Passwords/Common-Credentials/xato-net-10-million-passwords.txt
+* Passwords.: 5189454
+* Bytes.....: 48312893
+* Keyspace..: 5189454
+
+Starting autotune. Please be patient...Finished autotune                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 5693299e0bbe87f327caa802008af432fbe837976b1232f8982...5b6fab
+Time.Started.....: Thu Oct  9 21:57:33 2025 (1 sec)
+Time.Estimated...: Thu Oct  9 21:57:34 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/home/smm/sib/SecLists/Passwords/Common-Credentials/xato-net-10-million-passwords.txt)
+Guess.Queue......: 40/40 (100.00%)
+Speed.#1.........:  7699.4 kH/s (0.51ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 5189454/5189454 (100.00%)
+Rejected.........: 0/5189454 (0.00%)
+Restore.Point....: 5189454/5189454 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 007z007 -> !!!!!!55
+
+Started: Thu Oct  9 21:57:30 2025
+Stopped: Thu Oct  9 21:57:36 2025
