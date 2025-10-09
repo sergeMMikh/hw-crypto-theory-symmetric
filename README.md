@@ -100,18 +100,18 @@ hashcat [options] hash [dictionary]
 ## Решение.
 
 После клонирования репозитория [SecLists](https://github.com/danielmiessler/SecLists) получаем достаточно обширную (40 документов) бибилотеку файлов с общепринятыми паролями. </br>
-![lib-list](image.png)
+![lib-list](images/Task-1/image.png)
 
 Согласно рекомендации задания и в соответсвии с примером на занятии делаю попытку подобрать пароль используя файл Common-Credentials/10-million-password-list-top-100000.txt предполагая тип хеширования MD5.</br>
-![alt text](image-1.png)
+![alt text](images/Task-1/image-1.png)
 
 Узнаём длину хеша. 64 символа или 256 бит</br>
-![alt text](image-2.png)
+![alt text](images/Task-1/image-2.png)
 
 В [документации к приложению](https://cocalc.com/github/hashcat/hashcat/blob/master/docs/exit_status_code.txt) находим список кодов возврата, так что можнопросто проверить результат (это позже пригодится).</br>
-![alt text](image-3.png)
+![alt text](images/Task-1/image-3.png)
 
-![alt text](image-4.png)
+![alt text](images/Task-1/image-4.png)
 
 Не выходит. Но вспоминаем программирование на bash, и ипшем скрипт [uncript.sh](uncript.sh).
 
@@ -133,7 +133,7 @@ modes=(
 Далее циклом `for`перебираем все моды.
 
 Результат- пароль `MARINA`.</br>
-![alt text](image-5.png)
+![alt text](images/Task-1/image-5.png)
 
 Здесь код возврата 255 появляется там, где длина хэша не подходит выбранному режиму (hashcat выдаёт “Token length exception”). Это будет учтено [в улучшеном варианте](advansed-uncript.sh).
 
