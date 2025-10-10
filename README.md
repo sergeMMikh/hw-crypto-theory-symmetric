@@ -99,6 +99,12 @@ hashcat [options] hash [dictionary]
 
 ## Решение.
 
+Пароль: `MARINA`
+Соответсвие хешу пароля было найдено в *100k-most-used-passwords-NCSC.txt*. Модель хеширования: *GOST R 34.11-94*.
+
+<details>
+<summary>Детали решения задания</summary>
+
 После клонирования репозитория [SecLists](https://github.com/danielmiessler/SecLists) получаем достаточно обширную (40 документов) бибилотеку файлов с общепринятыми паролями. </br>
 ![lib-list](images/Task-1/image.png)
 
@@ -139,5 +145,12 @@ modes=(
 
 Ничто не помешает использовать цикл для всех файлов в директории `SecLists/Passwords/Common-Credentials`. Но эта процедура займёт уйму времени.
 
+Дополднения в коде:
+ *  `rule="/usr/share/hashcat/rules/best64.rule" ` для мутаций (MARINA из marina);
+ * соответсвенно `-O` и правило для мутаций добавлено в функцию сканирования;
+ * изменил правилла определения успеха: определяем только по появлению строки `hash:plain` в `outfile` (не будем доверять только коду возврата);
+ * добавил `trap`
+
 ![alt text](images/Task-1/image-6.png)
 
+</details>
