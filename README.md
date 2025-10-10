@@ -156,3 +156,113 @@ modes=(
 ![alt text](images/Task-1/image-6.png)
 
 </details>
+
+-----
+
+### Задача №2 - VeraCrypt
+
+### Справка 
+
+[VeraCrypt](https://www.veracrypt.fr/en/Home.html) - Open Source ПО для шифрования дисков.
+
+Позволяет делать достаточно много вещей, но нас будет интересовать одна ключевая функция: возможность создать виртуальный зашифрованный диск и "подключать" к вашей ОС, при этом все операции чтения/записи с этого диска будут происходить прозрачно для пользователя.
+
+[Скачать VeraCrypt](https://www.veracrypt.fr/en/Downloads.html) можно с официальной страницы (не качайте из неизвестных источников).
+
+![](pic/veracrypt.png)
+
+---
+
+###  Решение
+
+[Ссылка на контейнер](hw-conteiner).
+
+<details>
+<summary>Детали решения задания</summary>
+
+Установка приложения VeraCrypt.
+
+![VeraCrypt download](images/Task-2/image.png)
+
+
+![VeraCrypt install](images/Task-2/image-1.png)
+
+<details>
+<summary>Создание контейнера, содержащего файл `tets-cript.txt`</summary>
+
+
+```
+$ veracrypt -t -c /home/smm/hw-conteiner
+Volume type:
+ 1) Normal
+ 2) Hidden
+Select [1]: 1
+
+Enter volume size (sizeK/size[M]/sizeG.sizeT/max): 1M
+
+Encryption Algorithm:
+ 1) AES
+ 2) Serpent
+ 3) Twofish
+ 4) Camellia
+ 5) Kuznyechik
+ 6) AES(Twofish)
+ 7) AES(Twofish(Serpent))
+ 8) Camellia(Kuznyechik)
+ 9) Camellia(Serpent)
+ 10) Kuznyechik(AES)
+ 11) Kuznyechik(Serpent(Camellia))
+ 12) Kuznyechik(Twofish)
+ 13) Serpent(AES)
+ 14) Serpent(Twofish(AES))
+ 15) Twofish(Serpent)
+Select [1]: 1
+
+Hash algorithm:
+ 1) SHA-512
+ 2) SHA-256
+ 3) BLAKE2s-256
+ 4) Whirlpool
+ 5) Streebog
+Select [1]: 1
+
+Filesystem:
+ 1) None
+ 2) FAT
+ 3) Linux Ext2
+ 4) Linux Ext3
+ 5) Linux Ext4
+ 6) NTFS
+Select [2]: 2
+
+Enter password:
+WARNING: Short passwords are easy to crack using brute force techniques!
+
+We recommend choosing a password consisting of 20 or more characters. Are you sure you want to use a short password? (y=Yes/n=No) [No]: y
+
+Re-enter password:
+
+Enter PIM:
+
+Enter keyfile path [none]:
+
+Please type at least 320 randomly chosen characters and then press Enter:
+
+
+Done: 100.000%  Speed: 344 KiB/s  Left: 0 s
+
+The VeraCrypt volume has been successfully created.
+```
+</details>
+
+![make conteiner](images/Task-2/image-2.png)
+
+Монтирование [контейнера](hw-conteiner), запись файла, размонтирование контейнера.
+
+![mout-cp-unvount](images/Task-2/image-3.png)
+
+Монтирование [контейнера](hw-conteiner), проверка содержимого файла.
+
+![alt text](images/Task-2/image-4.png)
+
+</details>
