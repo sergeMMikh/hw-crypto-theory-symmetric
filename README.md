@@ -99,8 +99,9 @@ hashcat [options] hash [dictionary]
 
 ## Решение.
 
-Пароль: `MARINA`
-Соответсвие хешу пароля было найдено в *100k-most-used-passwords-NCSC.txt*. Модель хеширования: *GOST R 34.11-94*.
+Пароль: `MARINA`</br>
+Соответсвие хешу пароля было найдено в *100k-most-used-passwords-NCSC.txt*. </br>
+Модель хеширования: *GOST R 34.11-94*.
 
 <details>
 <summary>Детали решения задания</summary>
@@ -149,7 +150,8 @@ modes=(
  *  `rule="/usr/share/hashcat/rules/best64.rule" ` для мутаций (MARINA из marina);
  * соответсвенно `-O` и правило для мутаций добавлено в функцию сканирования;
  * изменил правилла определения успеха: определяем только по появлению строки `hash:plain` в `outfile` (не будем доверять только коду возврата);
- * добавил `trap`
+ * добавил `trap`;
+ * добавил функцию `on_err()` для завершения функции.
 
 ![alt text](images/Task-1/image-6.png)
 
