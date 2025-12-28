@@ -12,6 +12,9 @@ hash=$1
 outfile="cracked.txt"
 
 modes=(
+  "500"
+  "7400"
+  "1800"
   "900"     
   "0"      
   "100"     
@@ -24,7 +27,7 @@ modes=(
   "6900"   
 )
 
-# : > "$outfile"
+ : > "$outfile"
 for f in "$dir"/*; do
   for m in "${modes[@]}"; do
   
@@ -36,7 +39,8 @@ for f in "$dir"/*; do
     rc=$?
 
     case $rc in
-      0) echo "[+] FOUND"; exit 0 ; grep -q -E "^${hash}:" "$outfile" ;;
+      # 0) echo "[+] FOUND"; exit 0 ; grep -q -E "^${hash}:" "$outfile" ;;
+      0) echo "[+] FOUND"; hashcat -m "$m" "$hash" "$f"/* --show >> "$outfile";;
       1) ;;  # not found
       255) echo "[-] leght is wrong"; continue ;;
       *) echo "[!] error rc=$rc" >&2 ;;
