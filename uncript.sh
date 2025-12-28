@@ -1,7 +1,13 @@
 #!/bin/bash
 
-dir="/home/smm/sib/SecLists/Passwords/Common-Credentials"
-hash="5693299e0bbe87f327caa802008af432fbe837976b1232f8982d3e101b5b6fab"
+# sudo hashcat -m 6900 5693299e0bbe87f327caa802008af432fbe837976b1232f8982d3e101b5b6fab /home/smm/hw-linux/seclists/Passwords/Common-Credentials/xato-net-10-million-passwords-1000000.txt --show
+
+# hashcat -m 6900 "$hash" \
+# $dir \
+# --show
+
+dir="/home/smm/hw-linux/seclists/Passwords/Common-Credentials"
+hash='5693299e0bbe87f327caa802008af432fbe837976b1232f8982d3e101b5b6fab'
 outfile="cracked.txt"
 
 modes=(
@@ -17,27 +23,42 @@ modes=(
   "6900"   
 )
 
-: > "$outfile"
+# : > "$outfile"
 
 for m in "${modes[@]}"; do
-  echo "[*] Try mode $m"
-  
-  hashcat -m "$m" "$hash" "$dir"/* \
-    --potfile-disable \
-    --outfile="$outfile" --outfile-autohex-disable \
-    --quiet >/dev/null 2>&1
-  rc=$?
+  for f in "$dir"/*; do
+    echo "Try mode $m in file $f"
+    [[ -f "$f" ]] || continue
 
-  if [[ $rc -eq 0 ]]; then
-    echo "[+] FOUND in mode $m:"
-    tail -n 1 "$outfile"
-    exit 0
-  elif [[ $rc -eq 1 ]]; then
-    echo "[-] Not found in mode $m"
-  else
-    echo "[!] Hashcat error/abort in mode $m (rc=$rc)"
-  fi
-done
+    hashcat -m "$m" "$hash" "$f"/* --show
 
-echo "[x] No match in provided modes/wordlists"
+    rc=$?
+
+    case $rc in
+      0) echo "[+] FOUND"; exit 0 ; grep -q -E "^${hash}:" "$outfile" ;;
+      1) ;;  # not found
+      255) echo "[-] leght is wrong"; continue ;;
+      *) echo "[!] error rc=$rc" >&2 ;;
+    esac
+
+  done
+done 
+
+
 exit 1
+
+
+# hashcat -m "$m" "$hash" "$f"/* \
+    #   --potfile-disable \
+    #   --outfile="$outfile" --outfile-autohex-disable \
+    #   --quiet >/dev/null 2>&1
+      
+    # rc=$?
+    # case $rc in
+    #   0) echo "[+] FOUND"; exit 0 ; grep -q -E "^${hash}:" "$outfile" ;;
+    #   1) ;;  # not found
+    #   255) echo "[-] leght is wrong" && continue ;;
+    #   *) echo "[!] error rc=$rc" >&2 ;;
+    # esac
+
+    # echo "[x] No match in provided modes/wordlists"
