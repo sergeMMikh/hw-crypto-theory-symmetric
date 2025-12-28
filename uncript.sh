@@ -7,7 +7,8 @@
 # --show
 
 dir="/home/smm/hw-linux/seclists/Passwords/Common-Credentials"
-hash='5693299e0bbe87f327caa802008af432fbe837976b1232f8982d3e101b5b6fab'
+# hash='5693299e0bbe87f327caa802008af432fbe837976b1232f8982d3e101b5b6fab'
+hash=$1
 outfile="cracked.txt"
 
 modes=(
@@ -24,9 +25,9 @@ modes=(
 )
 
 # : > "$outfile"
-
-for m in "${modes[@]}"; do
-  for f in "$dir"/*; do
+for f in "$dir"/*; do
+  for m in "${modes[@]}"; do
+  
     echo "Try mode $m in file $f"
     [[ -f "$f" ]] || continue
 
