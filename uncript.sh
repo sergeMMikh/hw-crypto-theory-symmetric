@@ -64,7 +64,7 @@ for f in "$dir"/*; do
     echo "Try mode $m in file $f"
     [[ -f "$f" ]] || continue
 
-    out=$(hashcat -m "$m" "$hash" --show 2>/dev/null)
+    out=$(hashcat -m "$m" -a 0 "$hash" --show 2>/dev/null)
 
     rc=$?
 
