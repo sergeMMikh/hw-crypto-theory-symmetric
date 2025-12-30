@@ -411,7 +411,6 @@ for f in "$dir"/*; do
   for m in "${modes[@]}"; do
   
     echo "Try mode $m in file $f"
-    [[ -f "$f" ]] || continue
 
     hashcat -m "$m" -a 0 "$hash" "$f" 
 
