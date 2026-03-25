@@ -2,7 +2,8 @@
 set -Eeuo pipefail
 
 dir="/home/smm/sib/SecLists/Passwords/Common-Credentials"
-hash="b896c0996c75a84f378c6ec0af924a800c0b7fcd0ee860b8fb8d7b45f7e9fd8d910604d22b6b9000965a0047c5009ee967a75bf21690412376da9f7bc48a8402"
+default_hash="b896c0996c75a84f378c6ec0af924a800c0b7fcd0ee860b8fb8d7b45f7e9fd8d910604d22b6b9000965a0047c5009ee967a75bf21690412376da9f7bc48a8402"
+hash="${1:-$default_hash}"
 outfile="cracked.txt"
 rule="/usr/share/hashcat/rules/best64.rule"
 
@@ -18,8 +19,6 @@ modes=(
   "11800"   # Streebog-512
   "6900"    # GOST 34.11-94
 )
-
-hexlen=${#hash}
 
 # ---------- traps ----------
 CURRENT_MODE=""
@@ -47,30 +46,50 @@ on_int() {
 trap 'on_err $LINENO "$BASH_COMMAND"' ERR
 trap 'on_int' INT TERM
 
+if ! command -v hashcat >/dev/null 2>&1; then
+  echo "[!] hashcat not found in PATH"
+  exit 127
+fi
+
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+if [[ -n "${XDG_DATA_HOME:-}" ]]; then
+  hc_data_dir="$XDG_DATA_HOME"
+else
+  hc_data_dir="$script_dir/.xdg-data"
+fi
+
+if ! mkdir -p "$hc_data_dir/hashcat/sessions" 2>/dev/null; then
+  hc_data_dir="/tmp/hashcat-xdg-${USER:-user}"
+  mkdir -p "$hc_data_dir/hashcat/sessions"
+fi
+export XDG_DATA_HOME="$hc_data_dir"
+
 uncript(){
   local mode="$1"
   local wordlist="$2"
+  local hc_log
+  local rc
+  hc_log="$(mktemp)"
 
   hashcat -a 0 -m "$mode" "$hash" "$wordlist" \
     -O ${rule:+-r "$rule"} \
     --potfile-disable \
     --outfile="$outfile" --outfile-autohex-disable \
-    --quiet >/dev/null 2>&1 || true
+    --quiet > /dev/null 2>"$hc_log"
+  rc=$?
 
-  grep -q -E "^${hash}:" "$outfile"
-}
+  if grep -q -E "^${hash}:" "$outfile"; then
+    rm -f "$hc_log"
+    return 0
+  fi
 
-needs_len_ok() {
-  local mode="$1"
-  case "$mode" in
-    900|0)                  [[ $hexlen -eq 32  ]];;   # MD4/MD5
-    100)                    [[ $hexlen -eq 40  ]];;   # SHA1
-    1300)                   [[ $hexlen -eq 56  ]];;   # SHA224
-    1400|6900|11700)        [[ $hexlen -eq 64  ]];;   # SHA256/GOST94/Streebog-256
-    10800)                  [[ $hexlen -eq 96  ]];;   # SHA384
-    1700|11800)             [[ $hexlen -eq 128 ]];;   # SHA512/Streebog-512
-    *)                      return 1;;
-  esac
+  if [[ $rc -ne 0 && $rc -ne 1 ]]; then
+    echo "[!] hashcat error in mode $mode on $(basename "$wordlist") (rc=$rc)"
+    sed -n '1,4p' "$hc_log"
+  fi
+
+  rm -f "$hc_log"
+  return 1
 }
 
 : > "$outfile"
