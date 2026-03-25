@@ -412,7 +412,7 @@ for f in "$dir"/*; do
   
     echo "Try mode $m in file $f"
 
-    hashcat -m "$m" -a 0 "$hash" "$f" 
+    hashcat -m "$m" -a 0 -w 3 "$hash" "$f" 
 
   done
 done

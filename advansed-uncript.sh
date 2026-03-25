@@ -2,7 +2,7 @@
 set -Eeuo pipefail
 
 dir="/home/smm/sib/SecLists/Passwords/Common-Credentials"
-hash="5693299e0bbe87f327caa802008af432fbe837976b1232f8982d3e101b5b6fab"
+hash="b896c0996c75a84f378c6ec0af924a800c0b7fcd0ee860b8fb8d7b45f7e9fd8d910604d22b6b9000965a0047c5009ee967a75bf21690412376da9f7bc48a8402"
 outfile="cracked.txt"
 rule="/usr/share/hashcat/rules/best64.rule"
 
@@ -86,10 +86,6 @@ for path in "$dir"/*; do
 
   for m in "${modes[@]}"; do
     echo "[*] Try mode $m"
-    if ! needs_len_ok "$m"; then
-      echo "[~] Skip mode $m (incompatible length: $hexlen)"
-      continue
-    fi
 
     # обновляем контекст для trap
     CURRENT_MODE="$m"
